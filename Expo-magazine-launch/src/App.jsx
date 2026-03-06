@@ -218,22 +218,9 @@ export default function App() {
 
       {/* ═══ SUCCESS SCREEN ═══ */}
       <div id="successScreen">
-        <div className="check-circle">
-          <svg
-            width="42"
-            height="42"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#020714"
-            strokeWidth="3"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <polyline points="20 6 9 17 4 12" />
-          </svg>
-        </div>
 
-        <p className="success-eyebrow">University of Kelaniya · 2025/2026</p>
+
+
 
         <h2 className="success-title">The Official</h2>
         <div className="success-sub">
@@ -263,9 +250,27 @@ export default function App() {
         </div>
 
         <p className="success-desc">
-          Exposition E Magazine is now live — bridging Management &amp; IT through
-          compelling conversations and expert insights.
+          Exposition E Magazine is now live
+          bridging Management &amp; IT through compelling conversations and expert insights.
         </p>
+
+        {/* QR Code + URL */}
+        <div className="qr-block">
+          <img
+            src="/qr-code.png"
+            alt="QR Code for emagazine.exposition.lk"
+            className="qr-img"
+          />
+          <p className="qr-label">Scan to read the magazine</p>
+          <a
+            href="https://emagazine.exposition.lk"
+            className="qr-url"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            emagazine.exposition.lk
+          </a>
+        </div>
       </div>
 
       <div className="footer-note">
